@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Home Loan Calculator Excel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Mobile Home Loan Calculator Excel</h1>
+            <p>Calculate your monthly payments and download in Excel format.</p>
+        </header>
+
+        <section class="calculator">
+            <div class="input-group">
+                <label for="loanAmount">Loan Amount ($):</label>
+                <input type="number" id="loanAmount" placeholder="Enter loan amount">
+            </div>
+
+            <div class="input-group">
+                <label for="interestRate">Interest Rate (%):</label>
+                <input type="number" id="interestRate" step="0.01" placeholder="Enter annual interest rate">
+            </div>
+
+            <div class="input-group">
+                <label for="loanTerm">Loan Term (Years):</label>
+                <input type="number" id="loanTerm" placeholder="Enter loan term in years">
+            </div>
+
+            <button onclick="calculateLoan()">Calculate</button>
+
+            <div class="output-group">
+                <h2>Monthly Payment: <span id="monthlyPayment">$0.00</span></h2>
+                <button onclick="downloadExcel()">Download as Excel</button>
+            </div>
+        </section>
+
+        <section class="instructions">
+            <h2>How to Use the Mobile Home Loan Calculator Excel</h2>
+            <p id="article"></p>
+        </section>
+        <hr>
+ <p style="text-align: center;">@ 2024 Mobile Home Loan Calculator Excel</p>
+</div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
